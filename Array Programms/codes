@@ -1,1 +1,23 @@
-programms on array
+                                                                     programms on array---
+ ----------------------------------------------------------------Program to print array in C--------------------------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+    int len;
+	int arr[len],i,j;
+	printf("enter the lenght of array\n");
+	scanf("%d",&len);
+	printf("enter the elements of array\n");
+	for(i=0;i<len;i++)
+	{
+		scanf("%d",&arr[i]);
+	}
+	for(j=0;j<len;j++)
+	{
+		printf("%d",arr[j]);
+	}
+	return 0;
+}
+
+ ---------------------------------------------------------------Program to sum the values of array in C------------------------------------------------------------------
+#include<stdio.h>
