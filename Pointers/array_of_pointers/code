@@ -1,0 +1,36 @@
+Defination-- When we want to point at multiple variables or memories of the same data type in a C program, we use an array of pointers.
+             If we want to include multiple elements in a program with the very same data type, we can use an array. Let us assume that 
+             we are using a total of five integers in any program. There are two different ways in which we can allocate memory to all of these integers:
+             We can create five integers differently;
+             We can create an array of all the different integers.
+             One of the huge advantages of using arrays is that it becomes very easy for a programmer to access all the elements in the program easily. 
+             All the elements can be accessed in a single run of a loop in the program
+
+Syntax = datatype *variable_name[10];
+Example = int *prt[10];        //it is the array of pointers 
+
+------------------------------------------------------------------------Programm on array of pointers---------------------------------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
