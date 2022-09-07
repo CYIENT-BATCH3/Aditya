@@ -1,0 +1,16 @@
+
+-------------------------------------------------------------------------Program to use null pointer---------------------------------------------------------------------
+
+#include<stdio.h>
+int main()
+{
+    int *p = NULL;
+    printf("null pointer address is = %d",p);
+    printf("null pointer address is = %p",p);
+    return 0;
+}
+
+
+
+
+
