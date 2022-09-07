@@ -1,0 +1,23 @@
+definition---Uninitialized pointers are called as wild pointers in C which points to arbitrary (random) memory location. This wild pointer may lead a program to 
+             behave wrongly or to crash.
+
+
+
+
+
+
+
+
+
+
+
+
+-------------------------------------------------------------Example programm for wild pointer----------------------------------------------------------------------------
+
+#include<stdio.h>
+int main()
+{
+    int *ptr;
+    printf("ptr=%d\n",*ptr);
+    return 0;
+}
