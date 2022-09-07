@@ -1,0 +1,41 @@
+-------------------------------------------------------------program to use void pointer by doing type casting---------------------------------------------------------
+#include<stdio.h>
+int main()
+{
+  int a=20;
+  float b=30.5;
+  char ch='a';
+  void *p;
+  p=&ch;
+  printf("after typecasting ch=%c\n",*(char*)p);       //to print the value
+  p=&b;
+  printf("after typecasting b=%f\n",*(float*)p);       //to print the value
+  p=&a;
+  printf("after typecasting a=%d\n",*(int*)p);         //to print the value
+  return 0;
+}
+
+----------------------------------------------------program to print address using void pointer by doing type casting--------------------------------------------------
+#include<stdio.h>
+int main()
+{
+  int a=20;
+  float b=30.5;
+  char ch='a';
+  void *p;
+  p=&ch;
+  printf("after typecasting ch=%p\n",(int*)p);//to print the address
+  p=&b;
+  printf("after typecasting b=%p\n",(int*)p);//to print the address
+  p=&a;
+  printf("after typecasting a=%p\n",(int*)p);//to print the address
+  return 0;
+}
+
+
+
+
+
+
+
+
