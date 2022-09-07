@@ -1,0 +1,22 @@
+------------------------------------------program to print address and increment using pointers it by doing type casting--------------------------------------------------
+#include<stdio.h>
+int main()
+{
+  int a=20;
+  float b=30.5;
+  char ch='a';
+  char *p;
+  p=&ch;
+  printf("after typecasting ch=%p\n",(int*)p);//to print the address
+  p++;
+  printf("after incrementing the address by 1 bite ch=%p\n",(int*)p);//to print the next address
+  p=&b;
+  printf("after typecasting b=%p\n",(int*)p);//to print the address
+  p++;
+  printf("after incrementing the address by 1 byte b=%p\n",(int*)p);//to print the next address
+  p=&a;
+  printf("after typecasting a=%p\n",(int*)p);//to print the address
+  p++;
+  printf("after incrementing the address by 1 byte a=%p\n",(int*)p);//to print the next address
+  return 0;
+}
