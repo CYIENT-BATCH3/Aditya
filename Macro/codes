@@ -1,0 +1,68 @@
+--------------------------------------------------------------------------program using MACRO -------------------------------------------------------------------------
+
+#include<stdio.h>
+#include<math.h>
+#define PI 3.14
+void area_circle()
+{
+    int r;
+    float area;
+    printf("enter the radius of circle\n");
+    scanf("%d",&r);
+    area = PI*r*r;
+   printf(" the area of circle is=%f\n",area);
+}
+void area_cylinder()
+{
+    int r,h;
+    float area;
+    printf("enter the radius of cylinder\n");
+    scanf("%d",&r);
+    printf("enter the height of cylinder\n");
+    scanf("%d",&h);
+    area = (2*PI*r*h)+(2*PI*r*r);
+    printf(" the area of cylinder is=%f\n",area);
+}
+void area_cone()
+{
+    float r=0,h=0,hr,h1=0,r1=0;
+    float area;
+    printf("enter the radius of cone\n");
+    scanf("%f",&r);
+    printf("enter the height of cone\n");
+    scanf("%f",&h);
+    area = PI*r*(r+sqrt(h*h+r*r));
+    printf(" the area of cylinder is=%f\n",area);
+}
+int main()
+{
+ setbuf(stdout,NULL);
+ area_circle();
+ area_cylinder();
+ area_cone();
+ return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
