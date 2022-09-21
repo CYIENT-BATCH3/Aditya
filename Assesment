@@ -200,27 +200,32 @@ int main()
 
 
 7.Write a C program of using function pointer. (i) add function (ii) sub function 
-#include <stdio.h>
 
-int add (int , int );
-int sub (int , int );
-int main() {
-  int a=5,b=3,c=0;
-  int (*ptr[2]) (int,int) = {add,sub};
-  c = (*ptr[0]) (a,b);
-  printf("\n sum: %d",c);
-  c = (*ptr[1]) (a,b);
-  printf("\n diff: %d",c);
-  return 0;
-}
-int add (int a, int b) {
-   int sum = a + b;
-   return sum;
-}
-int sub (int a, int b) {
-    int diff = a - b;
-    return diff;
-}
+#include <stdio.h>  
+int add(int,int);  
+int sub(int,int);  
+int main()  
+{  
+    int x,y,r;              
+    int (*fp[2]) (int,int) = {add,sub};        
+    printf("Enter the values of x and y :");  
+    scanf("%d %d",&x,&y);  
+    r=(*fp[0]) (x,y);        
+    printf("\nSum of two values is : %d",r);  
+    r=(*fp[1]) (x,y);              
+    printf("\nDifference of two values is : %d",r);  
+    return 0;  
+}  
+int add(int x,int y)  
+{  
+    int a=x+y;  
+    return a;  
+}  
+int sub(int x,int y)  
+{  
+    int a=x-y;  
+    return a;  
+}  
 
 
 
